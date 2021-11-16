@@ -102,7 +102,9 @@ function createPromise(remoteFile, options) {
       parent: remoteFile,
     });
   }
-  return fetch(reqOptions.href)
+  return fetch(reqOptions.href, {
+    headers: { ...reqOptions.headers },
+  })
     .then((res) => res.text())
     .then((body) => {
       cache[reqOptions.href] = body;

@@ -1,6 +1,6 @@
 {
   "name": "@live-codes/postcss-import-url",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "PostCSS plugin inlines remote files, for in-browser use in livecodes.io",
   "main": "dist/index.js",
   "keywords": [
