@@ -28,7 +28,7 @@ fs.readFile(file_to_patch, 'utf8', function (err, data) {
 
 esbuild.build({
   entryPoints: ['index.ts'],
-  outfile: 'dist/index.js',
+  outfile: 'dist/postcss-import-url.js',
   format: 'iife',
   globalName: 'postcssImportUrl',
   bundle: true,
